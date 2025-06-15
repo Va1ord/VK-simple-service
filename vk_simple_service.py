@@ -13,6 +13,12 @@ def main():
 
     for event in longpoll.listen():
 
+        if event.type == VkBotEventType.GROUP_JOIN:
+            print(f'{event.obj.user_id} joined a group!')
+
+        if event.type == VkBotEventType.MESSAGE_TYPING_STATE:
+            print(f'Typing {event.obj.from_id} to {event.obj.to_id}')
+        
         if event.type == VkBotEventType.MESSAGE_NEW:
             print(event)
             print('New message:')
