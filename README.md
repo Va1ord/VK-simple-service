@@ -7,6 +7,7 @@ In addition, we can immediately respond to the user by calling the messages.send
 For a correct call, it is necessary to pass the user_id — the identifier of the user or group chat where we are writing the message, the text of the message message, as well as a large random number of random_ids, which is necessary in order not to send the user the same messages several times.
 I think I'll deal with this powerful VK API later and post a few additional features.
 The time has come. I used some of the code from a previous project. You can use this bot for a simple service.
+You can also connect these two projects VkAPI without any difficulty. Good luck!
 See you soon
 
 Last change: I have things to do in the next few days, I think when I get back I'll finalize a few features in this project and take part in a code marathon (maybe I'll create a new repository for it)
